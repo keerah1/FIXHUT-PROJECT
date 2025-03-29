@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <title> FRONTEND INTERFACE</title>
+    <style>
+      body{
+        background-color: rgb(148, 146, 146);
+        
+      }
+      .wel-come{
+        font-family: ROBOTO, ARIAL;
+        font-size: 40px;
+        font-style: italic;
+        font-weight: 700;
+        margin-bottom: 0;
+      }
+      .name-d{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    
+      }
+      .name-p{
+        font-family: roboto,arial;
+        font-size: 16px;
+        font-weight: 500;
+
+      }
+      .input-d{
+        display: flex;
+        flex: 1;
+        margin-left: 3px;
+
+      }
+      .input-box{
+        width: 200px;
+        padding-right: 100px;
+        padding-top: 8px;
+        padding-bottom:8px ;
+        border: solid;
+        font-family: roboto,arial;
+        font-size: 14px;
+      }
+
+      .model-p, .make-p{
+        font-family: roboto,arial;
+        font-size: 16px;
+        font-weight: 500;
+        margin-top: 25px;
+      }
+
+    .model-d, .make-d{
+      display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-top: 30px;
+    }
+    .motto-p{
+      font-family: roboto,arial;
+      font-size: 14px;
+      font-weight: 500;
+      margin-top: 0;
+      margin-bottom: 40px;
+    }
+    .order-p{
+      font-family: ROBOTO, ARIAL;
+        font-size: 16px;
+        font-style: italic;
+        font-weight: 500;
+        margin-bottom: 30px;
+    }
+    .image-i{
+      width: 150px;
+    
+      
+    }
+    .image-d{
+      margin-right: 20px;
+    }
+    
+    
+    .whole-grid{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      
+    }
+
+    .box-d{
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+
+    .register-b{
+      width: 250px;
+      height: 40px;
+      background-color: black;
+      color: white;
+      font-family: roboto,arial;
+      font-size: 14px;
+      margin-left: 400px;
+      cursor: pointer;
+      border-radius: 2px;
+      transition: opacity, 0.15s;
+      position: relative;
+      
+
+    }
+
+    .register-b .tooltip{
+      position: absolute;
+      background-color: white;
+      color: green;
+      padding-top:4px ;
+      padding-bottom: 4px;
+      padding-left: 10px;
+      padding-right: 10px;
+      font-family: roboto,arial;
+      font-size: 12px;
+      font-style: italic;
+      bottom:-30px ;
+      right: -50px;
+      opacity: 0;
+      pointer-events: none;
+    }
+    .register-b:hover{
+      opacity: 0.5;
+
+      
+        }
+    .register-b:active .tooltip{
+      opacity: 1;
+    }
+    </style>
+  </head>
+  <body>
+    
+  
+    <div class="whole-grid">
+      <div class="image-d">
+        <img class="image-i" src="download (7).jfif">
+      </div>
+      <div>
+        
+      <p class="wel-come">Welcome To Fix Hut...</p>
+      <p class="motto-p">We fix! We sell! We give the best recommendations on gadgets.</p>
+      <p class="order-p">Place your order!</p>
+      </div>  
+    </div>
+
+    <div class="box-d">
+      <div class="name-d">
+        <p class="name-p">NAME:</p>
+        <div class="input-d">
+          <input class="input-box" type="text">
+        </div>
+      </div>
+      
+      <div class="model-d">
+        <p class="model-p">LAPTOP'S MODEL:</p>
+        <div class="input-d">
+          <input class="input-box" type="text"> 
+        </div>
+      </div>
+  
+      <div class="make-d">
+        <p class="make-p">LAPTOP'S MAKE:</p>
+        <div class="input-d">
+          <input class="input-box" type="text"> 
+        </div>
+      </div>
+   
+    </div>
+    
+      <button class="register-b">Register
+        <div class="tooltip">successfully registered</div>
+      </button>
+ 
+    
+
+  
+   
+    
+
+   
+  </body>
+</html>
